@@ -1,0 +1,3 @@
+[submodule "fast_control"]
+	path = fast_control
+	url = git@github.com:julyfun/fast_control
