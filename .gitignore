@@ -1,0 +1,10 @@
+.vscode
+.DS_Store
+.nvimlog
+*.swp
+.zed
+*.DAE
+*.STL
+*.stl
+*.3ds
+

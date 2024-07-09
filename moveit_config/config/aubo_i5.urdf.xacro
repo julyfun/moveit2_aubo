@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="aubo_i5">
+    <xacro:arg name="initial_positions_file" default="initial_positions.yaml" />
+
+    <!-- Import aubo_i5 urdf file -->
+    <xacro:include filename="$(find aubo)/urdf/aubo_i5.urdf" />
+
+    <!-- Import control_xacro -->
+    <xacro:include filename="aubo_i5.ros2_control.xacro" />
+
+
+    <xacro:aubo_i5_ros2_control name="FakeSystem" initial_positions_file="$(arg initial_positions_file)"/>
+
+</robot>
