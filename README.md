@@ -3,7 +3,7 @@
 - bringup 提供 launch 文件
 - vr_cali 标定动作. in: tf(ref, tracker_random) out: tf(custom, tracker_upright)
 - vr_track_tcp 接收 windows 发来的 tracker 坐标. in: tcp(localhost: 3001) out: tf(ref, tracker_random)
-- ik in: load urdf, tf(tracker_upright, custom) | out(tcp: 192.168.38.128:8899 (to vm))
+- ik_kdl in: load urdf, tf(tracker_upright, custom) | out(tcp: 192.168.38.128:8899 (to vm))
 
 ## windows side
 - in: vr sdk | out: tcp(wsl:3001)
