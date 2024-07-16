@@ -7,4 +7,4 @@
 *.STL
 *.stl
 *.3ds
-
+.cache/

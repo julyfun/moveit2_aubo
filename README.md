@@ -10,11 +10,24 @@
 
 So:
 
+## full kdl
+
+```
+ros2 launch bringup cali.py
+# windows: ./opencv-tcp.exe
+# open VMWARE
+# Calibrate.
+ros2 launch bringup kdl.py
+```
+
+## full moveit
+
 ```
 ros2 launch bringup cali.py
 # windows: ./opencv-tcp.exe
 # Calibrate.
-ros2 launch bringup launch.py
+ros2 launch moveit_config demo.launch.py 
+ros2 launch bringup moveit.py
 ```
 
 ## To show robot model
