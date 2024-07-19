@@ -27,7 +27,7 @@ ros2 launch bringup cali.py
 # windows: ./opencv-tcp.exe
 # Calibrate.
 ros2 launch moveit_config demo.launch.py 
-ros2 launch bringup moveit.py
+colcon build .. && ros2 launch bringup moveit.py
 ```
 
 ## To show robot model
@@ -37,3 +37,8 @@ colcon build --symlink-install --packages-select aubo aubo_description
 jst bs install/setup.bash
 ros2 launch aubo launch.py
 ```
+
+## todo:
+
+- [x] angle interpolation seems wrong.
+- [ ] 电机发的是两圈的，注意内部处理。
