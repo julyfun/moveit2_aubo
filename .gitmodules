@@ -3,4 +3,4 @@
 	url = git@github.com:julyfun/fast_control
 [submodule "mini_latency"]
 	path = mini_latency
-	url = ./mini_latency/
+	url = git@github.com:julyfun/mini_latency.git
