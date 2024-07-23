@@ -41,4 +41,6 @@ ros2 launch aubo launch.py
 ## todo:
 
 - [x] angle interpolation seems wrong.
-- [ ] 电机发的是两圈的，注意内部处理。
+- [x] 电机发的是两圈的，注意内部处理。
+- [x] 机械臂开机怎么开，更新机械臂驱动，加速 macsize 获取
+- [ ] 仿真模式和真机模式都有很大延迟，奇怪的是，即使仿真时控制 mac 调小，延迟依然小不下来，不及以前。
