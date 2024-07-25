@@ -25,7 +25,7 @@ ros2 launch bringup kdl.py
 ```
 ros2 launch bringup cali.py
 # windows: ./opencv-tcp.exe
-# Calibrate. using cli: j.p0, j.px, j.py, j.cali, j.up
+# Calibrate. using cli: j.p0, j.px, j.py, j.cali, j.up (or simply j.l to load)
 ros2 launch moveit_config demo.launch.py 
 colcon build --packages-select ik && ros2 run ik ik_joint_broadcaster_exe
 colcon build --packages-select ik bringup && ros2 launch bringup moveit.py
