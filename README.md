@@ -20,14 +20,15 @@ ros2 launch bringup cali.py
 ros2 launch bringup kdl.py
 ```
 
-## full moveit
+## Full moveit
 
 ```
 ros2 launch bringup cali.py
 # windows: ./opencv-tcp.exe
-# Calibrate.
+# Calibrate. using cli: j.p0, j.px, j.py, j.cali, j.up
 ros2 launch moveit_config demo.launch.py 
-colcon build .. && ros2 launch bringup moveit.py
+colcon build --packages-select ik && ros2 run ik ik_joint_broadcaster_exe
+colcon build --packages-select ik bringup && ros2 launch bringup moveit.py
 ```
 
 ## To show robot model
@@ -43,4 +44,5 @@ ros2 launch aubo launch.py
 - [x] angle interpolation seems wrong.
 - [x] 电机发的是两圈的，注意内部处理。
 - [x] 机械臂开机怎么开，更新机械臂驱动，加速 macsize 获取
-- [ ] 仿真模式和真机模式都有很大延迟，奇怪的是，即使仿真时控制 mac 调小，延迟依然小不下来，不及以前。
+- [x] 仿真模式和真机模式都有很大延迟，奇怪的是，即使仿真时控制 mac 调小，延迟依然小不下来，不及以前。- 速度 / 加速度插值有问题（线性插值加速度导致加速度太小了，估计哪里写挂了）。优化了插值方法以后变好了。
+- [ ] 透传函数时不时阻塞一两百毫秒，检查
