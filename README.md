@@ -39,6 +39,13 @@ jst bs install/setup.bash
 ros2 launch aubo launch.py
 ```
 
+## 神秘科技
+
+- 神秘的在线插补，限制关节速度和角速度
+- hand 静止检测
+- 延迟抽象，进行位置预测
+- 光速碰撞检测
+
 ## todo:
 
 - [x] angle interpolation seems wrong.
