@@ -39,6 +39,19 @@ jst bs install/setup.bash
 ros2 launch aubo launch.py
 ```
 
+## 坐标系问题
+
+要求 ref 系下 tracker_random 原点的位置?
+
+获取 tracker_random 表示转 ref 表示的 R, T: (x_ref = R * (x_trakcer_random) + T)。那么 T 也是要求的原点位置
+
+ref is parent & target; tracker_random is child & source
+
+## 坐标系规定
+
+- 标定时，手向前伸为 x 轴，向左为 y 轴
+- ik 函数（以及 urdf model）中，x 轴为桌面左（桌前定义为朝向 uji 其他机械臂工作区），y 轴为桌面后
+
 ## 神秘科技
 
 - 神秘的在线插补，限制关节速度和角速度

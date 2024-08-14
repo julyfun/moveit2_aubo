@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: aubo
+    relative_path: urdf/aubo_i5_dual3.urdf
+  srdf:
+    relative_path: config/aubo_i5.srdf
+  package_settings:
+    author_name: julyfun
+    author_email: julyfun.collect@outlook.com
+    generated_timestamp: 1723109235
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
