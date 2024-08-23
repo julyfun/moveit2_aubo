@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.7">
   <diagram name="第 1 页" id="AnMRVbrkqxffbET3McZs">
-    <mxGraphModel dx="1137" dy="729" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1493" dy="956" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -13,7 +13,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-1" value="仓库: openvr-tcp (在 windows 上)&lt;br&gt;作用：通过 openvr SDK 接收 VIVE Tracker 的位姿信息，通过 tcp 发送给 wsl&lt;div&gt;外部依赖：Poco 库&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="320" width="210" height="80" as="geometry" />
+          <mxGeometry x="160" y="310" width="210" height="80" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-2" target="jegcrzORA-ZSloYt-0iM-1">
           <mxGeometry relative="1" as="geometry" />
@@ -24,51 +24,99 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-2" value="软件：StreamVR (仅良好支持&amp;nbsp; Windows）&lt;div&gt;这是 VIVE Tracker 的驱动&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="223" y="170" width="190" height="60" as="geometry" />
+          <mxGeometry x="170" y="160" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-8" value="备注：启动方式和顺序见 README" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
-          <mxGeometry x="460" y="70" width="190" height="60" as="geometry" />
+          <mxGeometry x="590" y="30" width="190" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-9" target="jegcrzORA-ZSloYt-0iM-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-9" value="ROS 包: vr_track_tcp&lt;div&gt;作用：接收 l&lt;span style=&quot;background-color: initial;&quot;&gt;ocalhost:3001的位姿，并&lt;/span&gt;&lt;/div&gt;&lt;div&gt;发布到 tf2 (&quot;ref&quot; &amp;lt;=&amp;gt; &quot;tracker_random+序号&quot;)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="214" y="480" width="208" height="60" as="geometry" />
+          <mxGeometry x="161" y="470" width="208" height="60" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-13" target="jegcrzORA-ZSloYt-0iM-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-13" value="ROS TF2 坐标系可视化" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="480" width="120" height="60" as="geometry" />
+          <mxGeometry x="430" y="535" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-15" target="jegcrzORA-ZSloYt-0iM-13">
+        <mxCell id="jegcrzORA-ZSloYt-0iM-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-15" target="jegcrzORA-ZSloYt-0iM-13">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-15" value="ROS 包: vr_cali&lt;div&gt;作用：标定自定义坐标系，发布到 tf2 (custom &amp;lt;=&amp;gt; tracker_upright+序号)&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="480" y="620" width="200" height="90" as="geometry" />
+          <mxGeometry x="165" y="560" width="200" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-17" target="jegcrzORA-ZSloYt-0iM-31">
+        <mxCell id="jegcrzORA-ZSloYt-0iM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-17" target="jegcrzORA-ZSloYt-0iM-31">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="909.9999999999998" y="370" as="targetPoint" />
+            <mxPoint x="789.9999999999998" y="365" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-17" value="ROS 包: ik&lt;div&gt;作用：与遨博机械臂 tcp 通信，接收 tf2 的 tracker 坐标并滤波逆解插值规划，发送给遨博机械臂和 moveit2 检测碰撞&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="390" width="180" height="100" as="geometry" />
+        <mxCell id="jegcrzORA-ZSloYt-0iM-17" value="ROS 包: ik&lt;div&gt;作用：与机械臂主机 ip 8899 端口 tcp 通信，接收 tf2 的 tracker 坐标并滤波、逆解、插值、规划，发送给遨博机械臂和 moveit2 检测碰撞&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="385" width="240" height="100" as="geometry" />
         </mxCell>
         <mxCell id="jegcrzORA-ZSloYt-0iM-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-21" target="jegcrzORA-ZSloYt-0iM-22">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-21" value="ROS 包: aubo_dual3&lt;div&gt;作用: 提供碰撞模型&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="520" y="250" width="120" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-22" target="jegcrzORA-ZSloYt-0iM-17">
+        <mxCell id="jegcrzORA-ZSloYt-0iM-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-22" target="jegcrzORA-ZSloYt-0iM-17">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-22" value="ROS moveit2&lt;div&gt;作用：接收机械臂信息，提供碰撞检测和 planning&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="490" y="350" width="180" height="60" as="geometry" />
+        <mxCell id="jegcrzORA-ZSloYt-0iM-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-22" target="jegcrzORA-ZSloYt-0iM-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="570" y="290" />
+              <mxPoint x="570" y="771" />
+            </Array>
+          </mxGeometry>
         </mxCell>
-        <mxCell id="jegcrzORA-ZSloYt-0iM-31" value="遨博机械臂主机" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="850" y="300" width="120" height="60" as="geometry" />
+        <mxCell id="jegcrzORA-ZSloYt-0iM-55" value="初始化数据：提供碰撞模型&lt;div&gt;（通过 movei2 setup assistant 配置）&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jegcrzORA-ZSloYt-0iM-54">
+          <mxGeometry x="0.5402" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-22" value="ROS moveit2&lt;div&gt;作用：接收碰撞模型和机械臂实时信息，提供碰撞检测和 planning&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="250" width="240" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-36" target="jegcrzORA-ZSloYt-0iM-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-36" value="未来 ROS 包: 手部模型检测&lt;div&gt;作用：检测手根&lt;span style=&quot;background-color: initial;&quot;&gt;坐标，只需向 tf2 发布 base-末端坐标系的转换即可&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="770" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-38" value="末端坐标捕获方案 1" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="120" width="280" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-39" value="末端坐标捕获方案 2" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="710" width="300" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-41" target="jegcrzORA-ZSloYt-0iM-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-41" target="jegcrzORA-ZSloYt-0iM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-41" value="ROS 包: joint_broadcaster（可选启动）&lt;div&gt;作用：与遨博 8891 端口 tcp 通信，并发布关节信息和路点缓存区大小信息&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="920" y="390" width="230" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-47" value="遨博机械臂（允许多臂）" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="165" width="300" height="360" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-31" value="遨博机械臂主机" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="jegcrzORA-ZSloYt-0iM-47">
+          <mxGeometry x="47.5" y="120" width="195" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-21" value="ROS 包: aubo_dual3&lt;div&gt;作用: 提供碰撞模型&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="jegcrzORA-ZSloYt-0iM-47">
+          <mxGeometry x="90" y="35" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;startArrow=classic;startFill=1;" edge="1" parent="1" source="jegcrzORA-ZSloYt-0iM-48" target="jegcrzORA-ZSloYt-0iM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-50" value="数据：控制和状态" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="jegcrzORA-ZSloYt-0iM-49">
+          <mxGeometry x="0.4" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jegcrzORA-ZSloYt-0iM-48" value="其他类型机械臂（可 7 轴，但 ik 包需要做额外抽象）" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="890" y="580" width="300" height="255" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
